@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import LabeledInput from "./LabeledInput";
+import Header from "./Header";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+     <Header>This is a header</Header>
+     <div className="labels">
+        <LabeledInput name='AT HOME'></LabeledInput>
+        <LabeledInput name='PARTY'></LabeledInput>
+        <LabeledInput name='DECADES'></LabeledInput>
+        <LabeledInput name='FOCUS'></LabeledInput>
+        <LabeledInput name='MOOD'></LabeledInput>
+        <LabeledInput name='HIP-HOP'></LabeledInput>
+        <LabeledInput name='ELECTRONIC'></LabeledInput>
+        <LabeledInput name='CHILL'></LabeledInput>
+        <LabeledInput name='WELLNESS'></LabeledInput>
+        <LabeledInput name='WORKOUT'></LabeledInput>
+        </div>
+        </div>
   );
 }
 
