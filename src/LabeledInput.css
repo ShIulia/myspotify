@@ -1,9 +1,5 @@
-.labels {
-    top: 246px;
-    left: 292px;
-    width: 200px;
-    height: 200px;
-    background: transparent linear-gradient(246deg, #21D4FD 0%, #B721FF1A 100%) 0% 0% no-repeat padding-box;
-    border-radius: 8px;
-    opacity: 1;
+.labeled-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
