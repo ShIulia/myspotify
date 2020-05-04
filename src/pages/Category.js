@@ -3,11 +3,12 @@ import { withRouter } from "react-router-dom";
 import { Switch, Link, Route } from "react-router-dom";
 
 class Category extends React.Component {
-  componentDidMount() {
-    console.log(this.props);
+  constructor(props) {
+    super(props);
   }
 
   render() {
+    console.log(this.props.match);
     return (
       <div>
         <ul>
@@ -42,7 +43,7 @@ class Category extends React.Component {
             <Link to="/categories/workout">WORKOUT</Link>
           </li>
         </ul>
-        
+
         {`Category page for ${
           this.props.match !== null ? this.props.match.params.id : "Unknown"
         } `}

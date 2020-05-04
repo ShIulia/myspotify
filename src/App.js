@@ -16,13 +16,13 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Category></Category>
-     
+
       <main>
         <Switch>
           <Route path="/" exact render={() => <div>Home page</div>} />
           <Route path="/about" component={About} />
           <Route path="/login" component={Login} />
+          <Route path="/categories" component={Category} />
           <Route path="/categories/:id" component={Category} />
         </Switch>
       </main>
