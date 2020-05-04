@@ -42,8 +42,7 @@ class Category extends React.Component {
             <Link to="/categories/workout">WORKOUT</Link>
           </li>
         </ul>
-        {/* </div>
-      <div> */}
+        
         {`Category page for ${
           this.props.match !== null ? this.props.match.params.id : "Unknown"
         } `}
