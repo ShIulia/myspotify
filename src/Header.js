@@ -20,6 +20,7 @@ class Header extends React.Component {
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/categories">Categories</Nav.Link>
             <Nav.Link href="/artists">Artists</Nav.Link>
+            <Nav.Link href="/login">Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

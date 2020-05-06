@@ -10,52 +10,70 @@ class LabeledInput extends React.Component {
     super(props);
 
     this.state.value = this.props.defaultValue;
-    console.log("LabeledInput - Inside constructor");
+
+    console.log(`LabeledInput - Inside constructor`);
   }
 
   static getDerivedStateFromProps(props, state) {
-    console.log("LabeledInput - Inside getDerivedStateFromProps", props, state);
+    console.log(`LabeledInput - Inside getDerivedStateFromProps`, props, state);
 
     return null;
   }
 
   componentDidMount() {
-    console.log("LabeledInput - Inside componentDidMounts");
+    console.log(`LabeledInput - Inside componentDidMount`);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log("LabeledInput - Inside shouldComponentUpdate");
+    console.log(
+      `LabeledInput - Inside shouldComponentUpdate`,
+      nextProps,
+      nextState
+    );
     return true;
   }
 
   getSnapshotBeforeUpdate(prevProps, prevState) {
-    console.log("LabeledInput - Inside getSnapshotBeforeUpdate");
+    console.log(
+      `LabeledInput - Inside getSnapshotBeforeUpdate`,
+      prevProps,
+      prevState
+    );
     return null;
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    console.log("LabeledInput - Inside componentDidUpdate");
+    console.log(
+      `LabeledInput - Inside componentDidUpdate`,
+      prevProps,
+      prevState,
+      snapshot
+    );
   }
 
   componentWillUnmount() {
-    console.log("LabeledInput - componentWillUnmount");
+    console.log(`LabeledInput - Inside componentWillUnmount`);
   }
 
   onChangeHandler = (e) => {
     console.log(e.target.value);
-    // value = e.target.value
+    const value = e.target.value;
+
+    this.props.change(this.props.id, value);
+
     this.setState({
-      value: e.target.value,
+      value: value,
     });
   };
 
   render() {
-    console.log("LabeledInput - Inside render");
+    console.log(`LabeledInput - Inside render`);
 
     const style = {
       marginBottom: "10px",
       color: "#929292",
       fontSize: "18px",
+      fontFamily: "Roboto",
     };
 
     return (
@@ -71,8 +89,6 @@ class LabeledInput extends React.Component {
           onChange={this.onChangeHandler}
           className="form-control"
         />
-        <FontAwesomeIcon icon={faHome} />
-        <span></span>
       </div>
     );
   }
