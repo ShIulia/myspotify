@@ -3,8 +3,17 @@ import { withRouter } from "react-router-dom";
 import { Switch, Link, Route } from "react-router-dom";
 
 class Category extends React.Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
+  // }
+
+  componentDidMount() {
+    fetch("https://api.spotify.com/v1/browse/categories", {
+      method: "POST",
+      headers: new Headers({}),
+    }).then((result) => {
+      console.log(result);
+    });
   }
 
   render() {

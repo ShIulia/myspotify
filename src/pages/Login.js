@@ -4,38 +4,38 @@ import LabeledInput from "../LabeledInput";
 
 class Login extends React.Component {
   state = {
-    "client-id": "",
-    "client-secret": "",
+    clientId: "",
+    clientSecret: "",
   };
 
-  componentDidMount() {
-    // fetch('https://jsonplaceholder.typicode.com/posts123')
-    //     .then(result => {
-    //
-    //         if (result.status < 200 || result.status >= 300) {
-    //             return Promise.reject(`Error encountered with status ${result.status}`);
-    //         }
-    //
-    //         return result.json()
-    //     })
-    //     .then(data => {
-    //         console.log(data)
-    //     })
-    //     .catch(error => {
-    //         console.log(error)
-    //     })
+  // componentDidMount() {
+  // fetch('https://jsonplaceholder.typicode.com/posts123')
+  //     .then(result => {
+  //
+  //         if (result.status < 200 || result.status >= 300) {
+  //             return Promise.reject(`Error encountered with status ${result.status}`);
+  //         }
+  //
+  //         return result.json()
+  //     })
+  //     .then(data => {
+  //         console.log(data)
+  //     })
+  //     .catch(error => {
+  //         console.log(error)
+  //     })
 
-    fetch("https://accounts.spotify.com/api/token", {
-      method: "POST",
-      headers: new Headers({
-        "Content-Type": "application/x-www-form-urlencoded",
-        Authorization: `Basic ${btoa("CLIENT_ID:CLIENT_SECRET")}`,
-      }),
-      credentials: "include",
-    }).then((result) => {
-      console.log(result);
-    });
-  }
+  //   fetch("https://accounts.spotify.com/api/token", {
+  //     method: "POST",
+  //     headers: new Headers({
+  //       "Content-Type": "application/x-www-form-urlencoded",
+  //       Authorization: `Basic ${btoa("CLIENT ID : CLIENT SECRET")}`,
+  //     }),
+  //     credentials: "include",
+  //   }).then((result) => {
+  //     console.log(result);
+  //   });
+  // }
 
   onClickHandler = () => {
     const params = {
