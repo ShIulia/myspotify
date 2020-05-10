@@ -1,19 +1,13 @@
 import React from "react";
 import "./Header.css";
-import { Navbar, Nav, Button, Form, FormControl } from "react-bootstrap";
+import Search from "./Search";
+import { Navbar, Nav } from "react-bootstrap";
 
 class Header extends React.Component {
   render() {
     return (
       <Navbar bg="light" expand="lg">
-        <Form inline>
-          <FormControl
-            type="text"
-            placeholder="Browse Artists"
-            className="search"
-          />
-          <Button className="button">Search</Button>
-        </Form>
+        <Search></Search>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="header-links">
