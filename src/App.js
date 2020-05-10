@@ -2,8 +2,8 @@ import React from "react";
 import { Switch, Link, Route } from "react-router-dom";
 import logo from "./logo.svg";
 import "./App.css";
-import LabeledInput from "./LabeledInput";
-import Header from "./Header";
+import LabeledInput from "./pages/LabeledInput";
+import Header from "./pages/Header";
 
 import About from "./pages/About";
 import Login from "./pages/Login";

@@ -1,4 +1,5 @@
 import React from "react";
+import Category from "./Category";
 
 class Categories extends React.Component {
   state = {
@@ -34,9 +35,13 @@ class Categories extends React.Component {
       });
   }
 
+  componentWillUnmount() {
+    console.log(`Categories inside componentWillUnmount`);
+  }
+
   render() {
     return this.state.categories.map((category) => {
-      return <div> {category.name} </div>;
+      return <Category name={category.name}> </Category>;
     });
   }
 }
