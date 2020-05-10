@@ -1,13 +1,10 @@
 import React from "react";
-import { Switch, Link, Route } from "react-router-dom";
-import logo from "./logo.svg";
+import { Switch, Route } from "react-router-dom";
 import "./App.css";
-import LabeledInput from "./pages/LabeledInput";
 import Header from "./pages/Header";
 
 import About from "./pages/About";
 import Login from "./pages/Login";
-import Category from "./pages/Category";
 import Categories from "./pages/Categories";
 import SpotifyCallback from "./pages/SpotifyCallback";
 

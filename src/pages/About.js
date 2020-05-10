@@ -6,7 +6,7 @@ class About extends React.Component {
   }
 }
 
-const About = () => {
+const AboutHeader = () => {
   return <div>About page</div>;
 };
 
