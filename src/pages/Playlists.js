@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import { checkAndReturnToken } from "../utils";
 
 class Playlists extends React.Component {
   state = {
@@ -13,15 +14,18 @@ class Playlists extends React.Component {
         : null;
 
     if (categoryId !== null && categoryId !== undefined) {
-      const token = localStorage.getItem("token");
-      const parsedToken = JSON.parse(token);
+      const token = checkAndReturnToken(this.props.history);
+
+      if (token === null) {
+        return;
+      }
 
       fetch(
         `https://api.spotify.com/v1/browse/categories/${categoryId}/playlists`,
         {
           method: "GET",
           headers: {
-            Authorization: `Bearer ${parsedToken.token}`,
+            Authorization: `Bearer ${token}`,
           },
         }
       )

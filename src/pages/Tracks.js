@@ -1,5 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
+import { checkAndReturnToken } from "../utils";
 
 import Player from "../components/Player";
 
@@ -16,15 +17,14 @@ class Tracks extends React.Component {
         : null;
 
     if (playlistId) {
-      const token = localStorage.getItem("token");
-      const parsedToken = JSON.parse(token);
+      const token = checkAndReturnToken(this.props.history);
 
       fetch(
         `https://api.spotify.com/v1/playlists/${playlistId}/tracks?limit=20`,
         {
           method: "GET",
           headers: {
-            Authorization: `Bearer ${parsedToken.token}`,
+            Authorization: `Bearer ${token}`,
           },
         }
       )
