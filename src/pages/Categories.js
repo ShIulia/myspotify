@@ -1,5 +1,7 @@
 import React from "react";
 import Category from "./Category";
+import { withRouter } from "react-router-dom";
+import { checkAndReturnToken } from "../utils";
 
 class Categories extends React.Component {
   state = {
@@ -7,13 +9,16 @@ class Categories extends React.Component {
   };
 
   componentDidMount() {
-    const token = localStorage.getItem("token");
-    const parsedToken = JSON.parse(token);
+    const token = checkAndReturnToken(this.props.history);
+
+    if (token === null) {
+      return;
+    }
 
     fetch("https://api.spotify.com/v1/browse/categories", {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${parsedToken.token}`,
+        Authorization: `Bearer ${token}`,
       },
     })
       .then((result) => {
@@ -35,15 +40,13 @@ class Categories extends React.Component {
       });
   }
 
-  componentWillUnmount() {
-    console.log(`Categories inside componentWillUnmount`);
-  }
-
   render() {
     return this.state.categories.map((category) => {
-      return <Category name={category.name}> </Category>;
+      return (
+        <Category name={category.name} id={category.id} url={category.url} />
+      );
     });
   }
 }
 
-export default Categories;
+export default withRouter(Categories);

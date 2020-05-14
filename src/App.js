@@ -6,7 +6,10 @@ import Header from "./pages/Header";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Categories from "./pages/Categories";
+import Category from "./pages/Category";
 import SpotifyCallback from "./pages/SpotifyCallback";
+import Playlists from "./pages/Playlists";
+import Tracks from "./pages/Tracks";
 
 function App() {
   return (
@@ -15,12 +18,14 @@ function App() {
 
       <main>
         <Switch>
-          <Route path="/" exact render={() => <div>Home page</div>} />
+          <Route path="/" exact={true} render={() => <div>Home page</div>} />
           <Route path="/about" component={About} />
           <Route path="/login" component={Login} />
           <Route path="/categories" exact component={Categories} />
-          {/* <Route path="/categories/:id" component={Category} /> */}
-          <Route path="/callback/" component={SpotifyCallback} />
+          <Route path="/categories/:id" component={Category} />
+          <Route path="/playlists/:id" component={Playlists} />
+          <Route path="/tracks/:id" component={Tracks} />
+          <Route path="/callback" component={SpotifyCallback} />
         </Switch>
       </main>
     </div>

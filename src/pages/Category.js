@@ -1,18 +1,58 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Category extends React.Component {
   constructor(props) {
     super(props);
   }
 
-  handleOnClick() {
-    console.log(`${this.props.name} was clicked`);
+  componentDidMount() {
+    console.log(this.props);
   }
 
   render() {
-    return <div onClick={() => this.handleOnClick()}>{this.props.name}</div>;
+    return (
+      <div>
+        <Link
+          to={{
+            pathname: `/playlists/${this.props.id}`,
+            state: {
+              categoryName: this.props.name,
+            },
+          }}
+        >
+          {this.props.name}
+        </Link>
+      </div>
+    );
   }
 }
 
-export default withRouter(Category);
+//   componentdidMount() {
+//     console.log(this.props);
+//   }
+
+//   handleOnClick() {
+//     console.log(`${this.props.name} was clicked`);
+//   }
+
+//   render() {
+//     <div>
+//       <Link
+//         to={{
+//           pathname: `/playlist/${this.props.id}`,
+//           state: {
+//             categoryName: this.props.name;
+//           }
+//         }}
+//       >
+//         {this.props.name}
+//       </Link>
+//     </div>
+//     );
+
+//     // return <div onClick={() => this.handleOnClick()}>{this.props.name}</div>;
+//   }
+// }
+
+export default Category;
