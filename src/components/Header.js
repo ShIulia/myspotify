@@ -1,9 +1,14 @@
 import React from "react";
 import "./Header.css";
-import Search from "./Search";
+import Search from "../pages/Search";
 import { Navbar, Nav } from "react-bootstrap";
+import { checkAndReturnToken } from "../utils";
 
 class Header extends React.Component {
+  getCurrentUser() {
+    if (checkAndReturnToken() != null) return <div>Name</div>;
+    else return <Nav.Link href="/login">Login</Nav.Link>;
+  }
   render() {
     return (
       <Navbar bg="light" expand="lg">
@@ -14,7 +19,7 @@ class Header extends React.Component {
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/categories">Categories</Nav.Link>
             <Nav.Link href="/artists">Artists</Nav.Link>
-            <Nav.Link href="/login">Login</Nav.Link>
+            {this.getCurrentUser()}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -1,6 +1,6 @@
 import React from "react";
-import Category from "./Category";
 import { withRouter } from "react-router-dom";
+import Category from "../components/Category";
 import { checkAndReturnToken } from "../utils";
 
 class Categories extends React.Component {
@@ -9,6 +9,22 @@ class Categories extends React.Component {
   };
 
   componentDidMount() {
+    // const token = localStorage.getItem('token');
+    //
+    // if (token === null || token === undefined) {
+    //     if (this.props.history) {
+    //         return this.props.history.push('/login');
+    //     }
+    // }
+    // const parsedToken = JSON.parse(token);
+    //
+    // const date = new Date();
+    // if ( parsedToken.expiration < date.getTime() ) {
+    //     if (this.props.history) {
+    //         return this.props.history.push('/login');
+    //     }
+    // }
+
     const token = checkAndReturnToken(this.props.history);
 
     if (token === null) {

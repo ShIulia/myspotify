@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Category.css";
 
 class Category extends React.Component {
   constructor(props) {

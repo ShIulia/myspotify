@@ -7,7 +7,7 @@ class Playlists extends React.Component {
     playlists: [],
   };
 
-  componentDidMount() {
+  async componentDidMount() {
     const categoryId =
       this.props.match && this.props.match.params
         ? this.props.match.params.id

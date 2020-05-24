@@ -1,4 +1,4 @@
-export const checkAndReturnToken = (history) => {
+export function checkAndReturnToken(history) {
   const token = localStorage.getItem("token");
 
   if (token === null || token === undefined) {
@@ -18,4 +18,4 @@ export const checkAndReturnToken = (history) => {
   }
 
   return parsedToken.token;
-};
+}
