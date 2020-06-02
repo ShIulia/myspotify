@@ -1,22 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Category.css";
 
 class Category extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     console.log(this.props);
   }
 
   render() {
+    // let categoryId;
+    // if (this.props.match !== null) {
+    //     categoryId = this.props.match.params.id;
+    // } else {
+    //     categoryId = 'Unknown';
+    // }
+
+    // const categoryId = this.props.match !== null ? this.props.match.params.id : 'Unknown';
+    //
+    // return (
+    //     <div>
+    //         {`Category page for ${ this.props.match !== null ? this.props.match.params.id : 'Unknown' }`}
+    //     </div>
+    // )
+
     return (
       <div>
         <Link
           to={{
-            pathname: `/playlists/${this.props.id}`,
+            pathname: `/categories/${this.props.id}`,
             state: {
               categoryName: this.props.name,
             },
@@ -28,32 +38,5 @@ class Category extends React.Component {
     );
   }
 }
-
-//   componentdidMount() {
-//     console.log(this.props);
-//   }
-
-//   handleOnClick() {
-//     console.log(`${this.props.name} was clicked`);
-//   }
-
-//   render() {
-//     <div>
-//       <Link
-//         to={{
-//           pathname: `/playlist/${this.props.id}`,
-//           state: {
-//             categoryName: this.props.name;
-//           }
-//         }}
-//       >
-//         {this.props.name}
-//       </Link>
-//     </div>
-//     );
-
-//     // return <div onClick={() => this.handleOnClick()}>{this.props.name}</div>;
-//   }
-// }
 
 export default Category;

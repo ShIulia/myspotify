@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { checkAndReturnToken } from "../utils";
+import Playlist from "../components/Playlist";
 
 class Playlists extends React.Component {
   state = {
@@ -12,6 +13,8 @@ class Playlists extends React.Component {
       this.props.match && this.props.match.params
         ? this.props.match.params.id
         : null;
+
+    console.log(categoryId);
 
     if (categoryId !== null && categoryId !== undefined) {
       const token = checkAndReturnToken(this.props.history);
@@ -60,25 +63,15 @@ class Playlists extends React.Component {
     return (
       <div>
         <h1>{categoryName}</h1>
-        <section>
+        <section className="row">
           {this.state.playlists.map((playlist) => {
             return (
-              <Link
-                to={{
-                  pathname: `/tracks/${playlist.id}`,
-                  state: {
-                    playlistName: playlist.name,
-                  },
-                }}
-              >
-                <div>
-                  <img
-                    src={playlist.image}
-                    alt={`Playlist ${playlist.name} image`}
-                  />
-                  <h3>{playlist.name}</h3>
-                </div>
-              </Link>
+              <Playlist
+                id={playlist.id}
+                name={playlist.name}
+                image={playlist.image}
+                desc={playlist.description}
+              />
             );
           })}
         </section>
