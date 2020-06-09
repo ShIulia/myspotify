@@ -19,7 +19,11 @@ const Track = (props) => {
           <section>
             <ol className="artist__wrapper">
               {props.artists.map((artist) => {
-                return <li className="artist">{artist}</li>;
+                return (
+                  <li key={`Artist${artist}`} className="artist">
+                    {artist}
+                  </li>
+                );
               })}
             </ol>
           </section>

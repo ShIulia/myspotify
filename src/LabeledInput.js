@@ -1,6 +1,7 @@
 import React from "react";
-// import { faHome } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import "./LabeledInput.css";
 
 class LabeledInput extends React.Component {
@@ -85,7 +86,7 @@ class LabeledInput extends React.Component {
           type="text"
           placeholder={this.props.placeholder}
           id={this.props.id}
-          value={this.state.value}
+          value={this.state.value || ""}
           onChange={this.onChangeHandler}
           className="form-control"
         />
