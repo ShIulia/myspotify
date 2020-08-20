@@ -4,13 +4,9 @@ import LabeledInput from "../LabeledInput";
 
 class Login extends React.Component {
   state = {
-    clientId: "",
-    clientSecret: "",
+    "client-id": "",
+    "client-secret": "",
   };
-
-  componentWillUnmount() {
-    console.log(`Login inside componentWillUnmount`);
-  }
 
   onClickHandler = () => {
     const params = {
