@@ -1,0 +1,10 @@
+.categories-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.categories-list a {
+    margin: 5px;
+    font-size: 25px;
+}

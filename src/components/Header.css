@@ -1,6 +1,15 @@
-.button {
-    background: #ffffff 0% 0% no-repeat padding-box;
-    border: 1px solid #21d4fd;
-    border-radius: 8px;
-    opacity: 1;
+div.header-links {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+}
+
+#basic-navbar-nav {
+    background-color: hotpink;
+}
+
+a.nav-link {
+    color: red;
+    margin-right: 150px;
 }

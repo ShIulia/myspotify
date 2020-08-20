@@ -43,7 +43,7 @@ export default class Search extends React.Component {
           />
           <Button onClick={() => this.handleSearch()}>Search</Button>
         </Form>
-        <div>Searching for:{this.state.searchValue}</div>
+        <div>{this.state.searchValue}</div>
       </div>
     );
   }

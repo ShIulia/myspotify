@@ -6,6 +6,7 @@ import Category from "../components/Category";
 import Playlists from "./Playlists";
 
 import { checkAndReturnToken } from "../utils";
+import "./Categories.css";
 
 class Categories extends React.Component {
   state = {
@@ -132,10 +133,12 @@ class Categories extends React.Component {
     }
 
     return (
-      <Switch>
-        <Route path={`${this.props.match.path}/:id`} component={Playlists} />
-        <Route path={`${this.props.match.path}*`}>{categoriesSection}</Route>
-      </Switch>
+      <div className="categories-list">
+        <Switch>
+          <Route path={`${this.props.match.path}/:id`} component={Playlists} />
+          <Route path={`${this.props.match.path}*`}>{categoriesSection}</Route>
+        </Switch>
+      </div>
     );
   }
 }
