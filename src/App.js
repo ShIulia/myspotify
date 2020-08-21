@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Playlists from "./pages/Playlists";
 import SpotifyCallback from "./pages/SpotifyCallback";
 import Tracks from "./pages/Tracks";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Header />
         <main>
           <Switch>
-            <Route path="/" exact={true} render={() => <div>Home page</div>} />
+            <Route path="/" exact={true} component={Homepage} />
             <Route path="/about" component={About} />
             <Route path="/login" component={Login} />
             <Route path="/categories*" component={Categories} />
