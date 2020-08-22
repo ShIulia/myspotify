@@ -73,8 +73,9 @@ class LabeledInput extends React.Component {
     const style = {
       marginBottom: "10px",
       color: "#929292",
-      fontSize: "18px",
+      fontSize: "28px",
       fontFamily: "Roboto",
+      textAlign: "center",
     };
 
     return (

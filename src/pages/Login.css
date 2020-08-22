@@ -1,0 +1,6 @@
+.login-box {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 340px 14px;
+    margin: 70px;
+}

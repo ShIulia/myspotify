@@ -15,22 +15,6 @@ class Categories extends React.Component {
   };
 
   async componentDidMount() {
-    // const token = localStorage.getItem('token');
-    //
-    // if (token === null || token === undefined) {
-    //     if (this.props.history) {
-    //         return this.props.history.push('/login');
-    //     }
-    // }
-    // const parsedToken = JSON.parse(token);
-    //
-    // const date = new Date();
-    // if ( parsedToken.expiration < date.getTime() ) {
-    //     if (this.props.history) {
-    //         return this.props.history.push('/login');
-    //     }
-    // }
-
     try {
       const token = checkAndReturnToken(this.props.history);
 
@@ -51,10 +35,6 @@ class Categories extends React.Component {
           },
         }
       );
-
-      // await new Promise(resolve => {
-      //     setTimeout(() => resolve(), 3000);
-      // });
 
       const data = await result.json();
 
@@ -79,30 +59,6 @@ class Categories extends React.Component {
         isLoading: false,
       });
     }
-
-    // fetch('https://api.spotify.com/v1/browse/categories', {
-    //     method: 'GET',
-    //     headers: {
-    //         Authorization: `Bearer ${token}`
-    //     }
-    // }).then(result => {
-    //     console.log(result)
-    //     return result.json();
-    // }).then(data => {
-    //     const categories = data.categories.items.map(item => {
-    //         return {
-    //             id: item.id,
-    //             name: item.name,
-    //             url: item.icons && item.icons.length > 0 ?
-    //                 item.icons[0].url : ''
-    //         }
-    //     });
-    //
-    //     this.setState({
-    //         categories: categories,
-    //         isLoading: false
-    //     })
-    // })
   }
 
   render() {

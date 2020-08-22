@@ -2,13 +2,18 @@
     display: flex;
 }
 
+.homepage {
+    display: flex;
+}
+
 .left {
     position: fixed;
     width: 50%;
     left: 0;
     height: 70%;
-    background-color: red;
     z-index: 1010101010;
+    display: flex;
+    align-items: center;
 }
 
 .right {
@@ -16,6 +21,32 @@
     width: 50%;
     left: 50%;
     height: 70%;
-    background-color: #0080ff;
     z-index: 1010101010;
+}
+
+.logo-left {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+h1 {
+    margin: 50px;
+    align-content: center;
+    padding-bottom: 250px;
+}
+
+.homepage-text {
+    padding-bottom: 20px;
+    margin: 25px;
+    font-size: 20px;
+}
+
+h3 {
+    margin: 0px 0px 70px 150px;
+    padding: 30px;
+}
+
+.homepage-footer {
+    background-color: blue;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Login.css";
 
 import LabeledInput from "../LabeledInput";
 
@@ -33,11 +34,12 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="login-box">
         <LabeledInput
           id="client-id"
           label="Client ID"
           placeholder="Client ID"
+          title="Manager or Customer"
           change={this.onChangeHandler}
         />
         <button
