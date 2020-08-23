@@ -17,9 +17,8 @@
 .section__tracks {
     height: 400px;
     overflow: hidden;
-    background-color: #dcdcdc;
+    background-color: white;
     margin-left: 130px;
-    border-style: double;
 }
 
 .section__player {
@@ -28,6 +27,7 @@
 
 .section__player iframe {
     margin: 0 auto;
+    border-radius: 5%;
 }
 
 @media screen and (max-width: 576px) {
@@ -37,4 +37,10 @@
     .content__wrapper>section {
         width: 100%;
     }
+}
+
+.playlist-name {
+    text-align: left;
+    margin-left: 280px;
+    padding: 10px;
 }

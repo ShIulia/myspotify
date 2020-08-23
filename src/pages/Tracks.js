@@ -77,7 +77,7 @@ class Tracks extends React.Component {
 
     return (
       <div>
-        <h1>{playlistName}</h1>
+        <h1 className="playlist-name">{playlistName}</h1>
         <section className="content__wrapper">
           <section className="section__tracks">
             <ul className="tracks__wrapper">

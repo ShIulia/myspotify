@@ -8,7 +8,7 @@ export default function Homepage() {
       <div className="homepage-main">
         <div className="left">
           <div className="centerd">
-            <h1>Spotify made easier.</h1>
+            <h1 className="h1-homepage">Spotify made easier.</h1>
             <div className="homepage-text">
               With Spotify, it’s easy to find the right music or podcast for
               every moment – on your phone, your computer, your tablet and more.{" "}

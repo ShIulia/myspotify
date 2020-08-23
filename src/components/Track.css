@@ -11,7 +11,8 @@
 }
 
 .track__wrapper--selected {
-    background-color: #21d4fd;
+    background-color: rgb(221, 211, 211);
+    border-radius: 5px;
 }
 
 .track__main {
@@ -19,19 +20,18 @@
 }
 
 .track__main h3 {
-    font-size: 14px;
-    line-height: 17px;
-    color: #727272;
-    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: black;
 }
 
 .track__wrapper--selected .track__main h3 {
-    color: white;
+    color: black;
 }
 
 .track__wrapper--selected .artist,
 .track__wrapper--selected .track__duration {
-    color: #e4e4e4;
+    color: black;
 }
 
 .track__duration {
@@ -49,13 +49,14 @@
 
 .artist {
     margin-right: 6px;
-}
-
-.artist,
-.track__duration {
-    color: #bfbfbf;
+    color: rgb(155, 151, 151);
     font-size: 12px;
     line-height: 14px;
+}
+
+.track__duration {
+    font-size: 18px;
+    color: rgb(155, 151, 151);
 }
 
 .artist:not(:last-child)::after {
