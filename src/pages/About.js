@@ -1,13 +1,5 @@
 import React from "react";
 
-class About extends React.Component {
-  componentWillUnmount() {
-    console.log(`About inside componentWillUnmount`);
-  }
+export default function About() {
+  return <h2>About section</h2>;
 }
-
-const AboutHeader = () => {
-  return <div>About page</div>;
-};
-
-export default About;

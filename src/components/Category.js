@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Category.css";
 
 class Category extends React.Component {
   componentDidMount() {
@@ -7,23 +8,8 @@ class Category extends React.Component {
   }
 
   render() {
-    // let categoryId;
-    // if (this.props.match !== null) {
-    //     categoryId = this.props.match.params.id;
-    // } else {
-    //     categoryId = 'Unknown';
-    // }
-
-    // const categoryId = this.props.match !== null ? this.props.match.params.id : 'Unknown';
-    //
-    // return (
-    //     <div>
-    //         {`Category page for ${ this.props.match !== null ? this.props.match.params.id : 'Unknown' }`}
-    //     </div>
-    // )
-
     return (
-      <div>
+      <div className="col-2 category__wrapper">
         <Link
           to={{
             pathname: `/categories/${this.props.id}`,
@@ -32,7 +18,14 @@ class Category extends React.Component {
             },
           }}
         >
-          {this.props.name}
+          <div style={{ width: "200px" }}>
+            <img
+              src={this.props.image}
+              alt={`Category ${this.props.name} image`}
+              className="category__image"
+            />
+            <h3 className="category__title">{this.props.name}</h3>
+          </div>
         </Link>
       </div>
     );
