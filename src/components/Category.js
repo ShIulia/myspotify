@@ -20,7 +20,7 @@ class Category extends React.Component {
         >
           <div style={{ width: "200px" }}>
             <img
-              src={this.props.image}
+              src={this.props.url}
               alt={`Category ${this.props.name} image`}
               className="category__image"
             />

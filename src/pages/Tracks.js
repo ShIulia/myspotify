@@ -76,7 +76,7 @@ class Tracks extends React.Component {
         : "Default";
 
     return (
-      <div>
+      <div className="tracks">
         <h1 className="playlist-name">{playlistName}</h1>
         <section className="content__wrapper">
           <section className="section__tracks">

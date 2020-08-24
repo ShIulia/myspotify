@@ -10,12 +10,12 @@ export const checkAndReturnToken = (history) => {
   const parsedToken = JSON.parse(token);
 
   const date = new Date();
-  if (parsedToken.expiration < date.getTime()) {
+  if (parsedToken?.expiration < date.getTime()) {
     if (history) {
       history.push("/login");
       return null;
     }
   }
 
-  return parsedToken.token;
+  return parsedToken?.token;
 };

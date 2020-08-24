@@ -49,3 +49,7 @@
     margin-left: 280px;
     padding: 10px;
 }
+
+.tracks {
+    height: calc(100vh - 56px);
+}
