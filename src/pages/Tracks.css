@@ -5,6 +5,10 @@
     overflow-y: auto;
 }
 
+.tracks__wrapper::-webkit-scrollbar {
+    display: none;
+}
+
 .content__wrapper {
     display: flex;
     flex-direction: row;
@@ -12,6 +16,7 @@
 
 .content__wrapper>section {
     width: 50%;
+    border-radius: 2%;
 }
 
 .section__tracks {

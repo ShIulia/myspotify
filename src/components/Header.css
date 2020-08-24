@@ -1,15 +1,9 @@
 div.header-links {
-    background-color: grey;
+    background-color: #992a2a;
     display: flex;
     justify-content: center;
-    margin: 3px;
 }
 
 #basic-navbar-nav {
-    background-color: hotpink;
-}
-
-a.nav-link {
-    color: red;
-    margin-right: 150px;
+    background-color: #303030;
 }

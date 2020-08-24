@@ -15,6 +15,7 @@ class Header extends React.Component {
       <Navbar bg="light" expand="lg" id="header-background">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
+          <Nav.Link href="/">mySpotify</Nav.Link>
           <Nav className="header-links">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/categories">Categories</Nav.Link>

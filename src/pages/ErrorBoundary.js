@@ -18,7 +18,7 @@ class ErrorBoundary extends React.Component {
       console.log(this.state.message);
       return (
         <section>
-          <h1>Oups! Error occured...</h1>
+          <h1>Oops! Error occured...</h1>
           <p>{this.state.message}</p>
         </section>
       );
