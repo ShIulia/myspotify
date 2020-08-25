@@ -91,12 +91,12 @@ class Categories extends React.Component {
     }
 
     return (
-      <div className="row">
+      <section className="row">
         <Switch>
           <Route path={`${this.props.match.path}/:id`} component={Playlists} />
           <Route path={`${this.props.match.path}*`}>{categoriesSection}</Route>
         </Switch>
-      </div>
+      </section>
     );
   }
 }

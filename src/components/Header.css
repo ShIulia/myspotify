@@ -13,3 +13,8 @@ div.header-links {
 .app-title {
     background-color: green;
 }
+
+.header-user {
+    font-weight: bold;
+    margin-left: 350px;
+}

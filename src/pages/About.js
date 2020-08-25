@@ -1,5 +1,10 @@
 import React from "react";
+import "./About.css";
 
 export default function About() {
-  return <h2>About section</h2>;
+  return (
+    <div className="about-page">
+      <div className="about-text">About Me</div>
+    </div>
+  );
 }

@@ -11,9 +11,13 @@ export default function Homepage() {
             <h1 className="h1-homepage">Spotify made easier.</h1>
             <div className="homepage-text">
               With Spotify, it’s easy to find the right music or podcast for
-              every moment – on your phone, your computer, your tablet and more.{" "}
+              every moment – on your phone, your computer, your tablet and more.
+              Spotify Free lets you listen at normal (96 kilobits per second) or
+              high quality (160 Kbps). Spotify Premium adds Extreme quality
+              streaming at 320 Kbps, which can make for better, more detailed
+              audio output if you use high-end headphones or speakers.{" "}
             </div>
-            <h3>Why Choose MySpotify?</h3>
+            <h3>Why Choose Spotify?</h3>
           </div>
         </div>
         <div className="right">

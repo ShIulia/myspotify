@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
 
 import Header from "./components/Header";
@@ -8,7 +8,6 @@ import About from "./pages/About";
 import Categories from "./pages/Categories";
 import ErrorBoundary from "./pages/ErrorBoundary";
 import Login from "./pages/Login";
-import Playlists from "./pages/Playlists";
 import SpotifyCallback from "./pages/SpotifyCallback";
 import Tracks from "./pages/Tracks";
 import Homepage from "./pages/Homepage";

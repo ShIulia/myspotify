@@ -24,7 +24,7 @@
 
 .playlist__title,
 .playlist__description {
-    color: #727272;
+    color: white;
 }
 
 .playlist__wrapper:hover {
