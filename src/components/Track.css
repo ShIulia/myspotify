@@ -1,7 +1,7 @@
 .track__wrapper {
     display: flex;
     flex-direction: row;
-    padding: 12px 10px 14px;
+    padding: 12px 10px 4px;
     cursor: pointer;
     transition: background-color 0.5s;
 }
@@ -50,7 +50,7 @@
 .artist {
     margin-right: 6px;
     color: rgb(155, 151, 151);
-    font-size: 12px;
+    font-size: 16px;
     line-height: 14px;
 }
 

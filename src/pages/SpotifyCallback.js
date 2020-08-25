@@ -11,7 +11,7 @@ class SpotifyCallback extends React.Component {
       const date = new Date();
       const token = {
         token: parsedString.access_token,
-        expiration: date.getTime() + parsedString.expires_in * 10000000000,
+        expiration: date.getTime() + parsedString.expires_in * 9999999999999999,
       };
 
       localStorage.setItem("token", JSON.stringify(token));

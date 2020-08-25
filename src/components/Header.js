@@ -23,7 +23,7 @@ export default function Header() {
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/categories">Categories</Nav.Link>
           <Nav.Link href="/about">About</Nav.Link>
-          <Nav.Link>{getCurrentUser()}</Nav.Link>
+          <Nav.Link href="/login">{getCurrentUser()}</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

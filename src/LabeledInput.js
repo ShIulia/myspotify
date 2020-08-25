@@ -76,6 +76,7 @@ class LabeledInput extends React.Component {
       fontSize: "28px",
       fontFamily: "Roboto",
       textAlign: "center",
+      color: "white",
     };
 
     return (

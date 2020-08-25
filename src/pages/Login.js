@@ -39,7 +39,7 @@ class Login extends React.Component {
           id="client-id"
           label="Client ID"
           placeholder="Client ID"
-          title="Manager or Customer"
+          title="clientID"
           change={this.onChangeHandler}
         />
         <button
