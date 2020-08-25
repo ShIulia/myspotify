@@ -76,12 +76,14 @@ class Categories extends React.Component {
     } else if (this.state.categories && this.state.categories.length > 0) {
       categoriesSection = this.state.categories.map((category) => {
         return (
-          <Category
-            key={`Category${category.id}`}
-            name={category.name}
-            id={category.id}
-            url={category.url}
-          />
+          <section className="row">
+            <Category
+              key={`Category${category.id}`}
+              name={category.name}
+              id={category.id}
+              url={category.url}
+            />
+          </section>
         );
       });
     } else {
@@ -89,7 +91,7 @@ class Categories extends React.Component {
     }
 
     return (
-      <div className="categories-list">
+      <div className="row">
         <Switch>
           <Route path={`${this.props.match.path}/:id`} component={Playlists} />
           <Route path={`${this.props.match.path}*`}>{categoriesSection}</Route>

@@ -1,9 +1,15 @@
 div.header-links {
-    background-color: #992a2a;
+    background-color: #bebebe;
     display: flex;
     justify-content: center;
 }
 
 #basic-navbar-nav {
-    background-color: #303030;
+    background-color: #bebebe;
+    display: flex;
+    justify-content: center;
+}
+
+.app-title {
+    background-color: green;
 }

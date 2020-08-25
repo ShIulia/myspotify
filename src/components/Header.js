@@ -18,12 +18,12 @@ export default function Header() {
     <Navbar bg="light" expand="lg" id="header-background">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav.Link href="/">mySpotify</Nav.Link>
+        <Nav.Link className="app-title">mySpotify</Nav.Link>
         <Nav className="header-links">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/categories">Categories</Nav.Link>
           <Nav.Link href="/about">About</Nav.Link>
-          <>{getCurrentUser()}</>
+          <Nav.Link>{getCurrentUser()}</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

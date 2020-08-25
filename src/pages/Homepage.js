@@ -22,7 +22,15 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <div className="homepage-footer">This is the footer</div>
+      <div className="homepage-footer">
+        <div className="footer-card">
+          High-quality streaming and audio quality
+        </div>
+        <div className="footer-card">
+          Spotify playlists, radio and discovering new music
+        </div>
+        <div className="footer-card">Find people and friends and connect</div>
+      </div>
     </div>
   );
 }

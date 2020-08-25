@@ -17,13 +17,7 @@
     margin: 15px 0 8px;
 }
 
-.category__description {
-    font-size: 12px;
-    line-height: 14px;
-}
-
-.category__title,
-.category__description {
+.category__title {
     color: #727272;
 }
 

@@ -1,10 +1,3 @@
-.categories-list {
-    padding-left: 10px;
-    list-style: none;
-    height: 100%;
-    overflow-y: auto;
-}
-
 div.categories-list a {
     margin: 5px;
     font-size: 25px;
