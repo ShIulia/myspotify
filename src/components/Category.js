@@ -18,7 +18,7 @@ class Category extends React.Component {
             },
           }}
         >
-          <div style={{ width: "200px" }}>
+          <div style={{ width: "220px" }}>
             <img
               src={this.props.url}
               alt={`Category ${this.props.name} image`}

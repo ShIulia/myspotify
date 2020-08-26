@@ -1,60 +1,60 @@
 .tracks__wrapper {
-    padding-left: 5px;
-    list-style: none;
-    height: 100%;
-    overflow-y: auto;
+  padding-left: 5px;
+  list-style: none;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .tracks__wrapper::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .content__wrapper {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
 }
 
-.content__wrapper>section {
-    width: 50%;
-    border-radius: 2%;
-    height: 600px;
+.content__wrapper > section {
+  width: 50%;
+  border-radius: 2%;
+  height: 600px;
 }
 
 .section__tracks {
-    height: 400px;
-    overflow: hidden;
-    background-color: white;
-    margin-left: 130px;
+  height: 400px;
+  overflow: hidden;
+  background-color: white;
+  margin-left: 130px;
 }
 
 .section__player {
-    display: flex;
+  display: flex;
 }
 
 .section__player iframe {
-    margin: 0 auto;
-    border-radius: 5%;
-    margin-top: 170px;
+  margin: 0 auto;
+  border-radius: 5%;
+  margin-top: 170px;
 }
 
 @media screen and (max-width: 576px) {
-    .content__wrapper {
-        flex-direction: column;
-    }
-    .content__wrapper>section {
-        width: 100%;
-    }
+  .content__wrapper {
+    flex-direction: column;
+  }
+  .content__wrapper > section {
+    width: 100%;
+  }
 }
 
 .playlist-name {
-    text-align: left;
-    margin-left: 280px;
-    margin-top: 30px;
-    padding: 10px;
-    color: white;
+  text-align: left;
+  margin-left: 280px;
+  margin-top: 30px;
+  padding: 10px;
+  color: white;
 }
 
 .tracks {
-    height: calc(100vh - 56px);
+  height: calc(100vh - 56px);
 }

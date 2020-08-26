@@ -1,25 +1,26 @@
 div.header-links {
-    background-color: white;
-    display: flex;
-    justify-content: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
 }
 
 #basic-navbar-nav {
-    background-color: white;
-    display: flex;
-    justify-content: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .app-title {
-    background-color: green;
+  background-color: green;
+  text-decoration: none !important;
 }
 
 .header-user {
-    font-weight: bold;
-    margin-left: 350px;
+  font-weight: bold;
+  margin-left: 350px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: black;
-    font-weight: 600;
+  color: black;
+  font-weight: 600;
 }

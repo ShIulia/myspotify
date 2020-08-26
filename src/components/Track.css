@@ -1,64 +1,66 @@
 .track__wrapper {
-    display: flex;
-    flex-direction: row;
-    padding: 12px 10px 4px;
-    cursor: pointer;
-    transition: background-color 0.5s;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 10px 4px;
+  cursor: pointer;
+  transition: background-color 0.5s;
 }
 
 .track__wrapper:not(.track__wrapper--selected):hover {
-    background-color: #ecfcff;
+  background-color: #ecfcff;
 }
 
 .track__wrapper--selected {
-    background-color: rgb(221, 211, 211);
-    border-radius: 5px;
+  background-color: rgb(221, 211, 211);
+  border-radius: 5px;
 }
 
 .track__main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .track__main h3 {
-    font-size: 20px;
-    line-height: 25px;
-    color: black;
+  font-size: 30px;
+  line-height: 35px;
+  color: black;
+  padding-top: 20px;
+  margin-bottom: 10px;
 }
 
 .track__wrapper--selected .track__main h3 {
-    color: black;
+  color: black;
 }
 
 .track__wrapper--selected .artist,
 .track__wrapper--selected .track__duration {
-    color: black;
+  color: black;
 }
 
 .track__duration {
-    margin-left: 10px;
-    margin-bottom: 0;
+  margin-left: 10px;
+  margin-bottom: 0;
 }
 
 .artist__wrapper {
-    padding-left: 0;
-    list-style: none;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .artist {
-    margin-right: 6px;
-    color: rgb(155, 151, 151);
-    font-size: 16px;
-    line-height: 14px;
+  margin-right: 6px;
+  color: rgb(155, 151, 151);
+  font-size: 16px;
+  line-height: 10px;
 }
 
 .track__duration {
-    font-size: 18px;
-    color: rgb(155, 151, 151);
+  font-size: 18px;
+  color: rgb(155, 151, 151);
 }
 
 .artist:not(:last-child)::after {
-    content: ",";
+  content: ",";
 }

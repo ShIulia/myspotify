@@ -1,10 +1,26 @@
 .about-page {
-    display: flex;
-    justify-content: center;
-    height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 56px);
+  color: white;
+  font-size: 100px;
 }
 
 .about-text {
-    color: white;
-    font-size: 140px;
+  color: white;
+  font-size: 80px;
+  text-decoration: none !important;
+  padding-top: 20px;
+}
+
+#list-a {
+  color: white;
+}
+
+.about-header {
+  background-color: #009933;
+  padding: 50px;
+  margin-top: 20px;
+  border-radius: 20px;
 }

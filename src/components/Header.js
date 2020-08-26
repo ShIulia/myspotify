@@ -18,7 +18,14 @@ export default function Header() {
     <Navbar bg="light" expand="lg" id="header-background">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav.Link className="app-title">mySpotify</Nav.Link>
+        <Nav.Link
+          a
+          target="_blank"
+          href="https://developer.spotify.com/dashboard/applications/b9d7780f35f64e8cbac834a6fe097e31"
+          className="app-title"
+        >
+          mySpotify
+        </Nav.Link>
         <Nav className="header-links">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/categories">Categories</Nav.Link>
