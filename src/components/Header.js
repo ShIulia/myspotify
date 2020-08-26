@@ -7,7 +7,12 @@ import { useHistory } from "react-router-dom";
 const getCurrentUser = () => {
   if (checkAndReturnToken() != null)
     return <div className="header-user">User: Iulia</div>;
-  else return <Nav.Link href="/login">Login</Nav.Link>;
+  else
+    return (
+      <Nav.Link className="header-links" href="/login">
+        Login
+      </Nav.Link>
+    );
 };
 
 export default function Header() {
