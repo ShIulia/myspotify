@@ -7,8 +7,8 @@ const Player = (props) => {
     return (
       <iframe
         src={`https://open.spotify.com/embed/track/${trackId}`}
-        width="300"
-        height="380"
+        width="400"
+        height="480"
         frameBorder="0"
         allowTransparency="true"
         allow="encrypted-media"
